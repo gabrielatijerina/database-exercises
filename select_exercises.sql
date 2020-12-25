@@ -1,29 +1,42 @@
 USE albums_db;
 
-SELECT * 
-FROM albums;
+SELECT database();
 
-SELECT * 
-FROM albums 
-WHERE artist = 'Pink Floyd'; 
+SHOW tables;
 
-SELECT release_date 
-FROM albums 
-WHERE name = "Sgt. Pepper's Lonely Hearts Club Band"; 
-
-SELECT genre , name
-FROM albums 
-WHERE name = 'Nevermind';
+DESCRIBE albums;
 
 SELECT *
 FROM albums 
-WHERE release_date BETWEEN 1990 AND 1999;
+LIMIT 5;
+
+SELECT DISTINCT genre
+from albums;
+
+SELECT name as 'albums by Pink Floyd'
+FROM albums WHERE artist = 'Pink Floyd';
+
+SELECT *
+FROM albums 
+WHERE name = 'sgt. pepper\'s lonely hearts club band';
+
+SELECT genre AS 'Genre for Nevermind'
+FROM albums
+WHERE name = 'nevermind';
+
+SELECT artist, 
+	name AS 'Albums Released in the 1990s'
+FROM albums
+WHERE release_date like '199%';
 
 SELECT * 
 FROM albums 
 WHERE sales < 20;
 
 SELECT *
-FROM albums
+FROM albums 
 WHERE genre = 'rock';
-# progressive rock or hard rock don't show up because they're not in quotes 
+
+SELECT *
+FROM albums 
+WHERE genre like '%rock%';

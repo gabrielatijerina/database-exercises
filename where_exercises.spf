@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>employees</string>
+			<key>host</key>
+			<string>157.230.209.171</string>
+			<key>kcid</key>
+			<string>-5623732085737833090</string>
+			<key>name</key>
+			<string>Codeup DB Server</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>easley_1266</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRk
+			YXRhgAGtCwwZGhscHSEoLDA1OlUkbnVsbNMNDg8QFBhXTlMua2V5
+			c1pOUy5vYmplY3RzViRjbGFzc6MREhOAAoADgASjFRYXgAWABoAI
+			gAxUdHlwZVRyb3dzVGtleXNfECZTZWxlY3Rpb25EZXRhaWxUeXBl
+			UHJpbWFyeUtleWVkRGV0YWlsc9MNDg8eHyCgoIAH0iIjJCVaJGNs
+			YXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJsZURpY3Rpb25hcnmj
+			JCYnXE5TRGljdGlvbmFyeVhOU09iamVjdNIODykroSqACYAL0g8t
+			Li9ZTlMuc3RyaW5ngApWZW1wX25v0iIjMTJfEA9OU011dGFibGVT
+			dHJpbmejMTM0WE5TU3RyaW5nWE5TT2JqZWN00iIjNjdeTlNNdXRh
+			YmxlQXJyYXmjNjg5V05TQXJyYXlYTlNPYmplY3TSIiMmO6ImPFhO
+			U09iamVjdAAIABEAGgAkACkAMgA3AEkATABRAFMAYQBnAG4AdgCB
+			AIgAjACOAJAAkgCWAJgAmgCcAJ4AowCoAK0A1gDdAN4A3wDhAOYA
+			8QD6ARABFAEhASoBLwExATMBNQE6AUQBRgFNAVIBZAFoAXEBegF/
+			AY4BkgGaAaMBqAGrAAAAAAAAAgEAAAAAAAAAPQAAAAAAAAAAAAAA
+			AAAAAbQ=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {694, 448}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>USE employees;
+
+SHOW tables;
+
+SELECT * 
+FROM employees 
+WHERE first_name IN ('Irena', 'Vidya', 'Maya');
+#709 records returned
+
+SELECT *
+FROM employees 
+where first_name = 'Irena'
+or first_name = 'Vidya'
+or first_name = 'Maya';
+#matches Q2
+
+SELECT * 
+FROM employees 
+where first_name like 'E%';</string>
+			<key>table</key>
+			<string>employees</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>214</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>#matches Q2
+
+SELECT * 
+FROM employees 
+where first_name like 'E%'</string>
+		<string>#matches Q2
+
+SELECT * 
+FROM employees 
+where first_name like 'B%'</string>
+		<string>#709 records returned
+
+SELECT *
+FROM employees 
+where first_name = 'Irena'
+or first_name = 'Vidya'
+or first_name = 'Maya'</string>
+		<string>SELECT * 
+FROM employees 
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')</string>
+		<string>SHOW tables</string>
+		<string>USE employees</string>
+		<string>SELECT *</string>
+		<string># 709 rows
+
+SELECT *
+FROM employees 
+WHERE first_name OR ('Irena', 'Vidya', 'Maya')</string>
+		<string>SELECT *
+FROM employees 
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')</string>
+		<string>USE employees_db</string>
+		<string>SELECT *
+FROM albums
+WHERE genre = 'rock'</string>
+		<string>SELECT *
+FROM albums
+WHERE genre = rock</string>
+		<string>SELECT *
+FROM albums 
+WHERE release_date BETWEEN 1990 AND 1999</string>
+		<string>SELECT genre , name
+FROM albums 
+WHERE name = 'Nevermind'</string>
+		<string>SELECT genre
+FROM albums 
+WHERE name = 'Nevermind'</string>
+		<string>SELECT * 
+FROM albums 
+WHERE sales &lt; 20</string>
+		<string>SELECT release_date 
+FROM albums 
+WHERE name = "Sgt. Pepper's Lonely Hearts Club Band"</string>
+		<string>SELECT genre 
+FROM albums 
+WHERE name = 'Nevermind'</string>
+		<string>SELECT 
+FROM albums 
+WHERE release_date BETWEEN 1990 AND 1999</string>
+		<string>SELECT * 
+FROM albums 
+WHERE release_date BETWEEN 1990 AND 1999</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.32-0ubuntu0.18.04.1-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
