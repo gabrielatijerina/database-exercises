@@ -1,6 +1,6 @@
 USE employees;
 
-SHOW tables;
+SHOW employees;
 
 DESCRIBE employees; 
 

@@ -13,7 +13,7 @@ LIMIT 5;
 SELECT DISTINCT genre
 from albums;
 
-SELECT name as 'albums by Pink Floyd'
+SELECT name AS 'Albums by Pink Floyd'
 FROM albums WHERE artist = 'Pink Floyd';
 
 SELECT *
