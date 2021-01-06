@@ -85,7 +85,7 @@ WHERE emp_no IN
     (SELECT emp_no
     FROM dept_manager
     WHERE to_date > curdate() AND gender = ‘F’);
-    
+
 #2. Find the first and last name of the employee with the highest salary.
 SELECT first_name, last_name, salary
 FROM employees
@@ -96,6 +96,7 @@ WHERE emp_no IN
     WHERE to_date > curdate())
 ORDER BY salary DESC
 LIMIT 1;
+
 #3. Find the department name that the employee with the highest salary works in.
 SELECT first_name, last_name, salary, dept_name
 FROM employees
